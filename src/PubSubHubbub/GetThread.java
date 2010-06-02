@@ -1,4 +1,4 @@
-package flagthis.pubsubhubbub;
+package PubSubHubbub;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -27,13 +27,10 @@ final class GetThread extends Thread {
 			httpresponse = this.httpClient.execute(this.httppost, this.context);
 			HttpEntity entity = httpresponse.getEntity();
 			if (entity != null) {
-				System.out.println(httpresponse.getStatusLine());
 				entity.consumeContent();
 			}
 		} catch (Exception ex) {
 			this.httppost.abort();
 		}
 	}
-
-
 }
