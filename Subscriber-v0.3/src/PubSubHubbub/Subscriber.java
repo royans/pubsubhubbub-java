@@ -104,7 +104,7 @@ public class Subscriber {
 				
 			httppost.setEntity(new UrlEncodedFormEntity(nvps));
 			httppost.setHeader("Content-type", "application/x-www-form-urlencoded");
-			httppost.setHeader("User-agent", "ERGO RSS pubsubhubbub 0.3");
+			httppost.setHeader("User-agent", "RSS pubsubhubbub 0.3");
 
 			//create the thread and start it running
 			GetThread thread = new GetThread(httpClient, httppost);
