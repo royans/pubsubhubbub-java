@@ -25,8 +25,6 @@ import org.apache.http.protocol.HTTP;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.NameValuePair;
 
-import com.ericsson.research.ergo.rssagent.PuSH.Web;
-
 public class Publisher {
 
 	DefaultHttpClient httpClient = null;
