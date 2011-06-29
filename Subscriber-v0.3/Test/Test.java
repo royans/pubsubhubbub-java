@@ -36,6 +36,8 @@ public class Test {
 			   String hub = "http://myhub.example.com/endpoint";
 			   String hub_topic = "http://publisher.example.com/topic.xml";
 			   
+			   startServer();
+
 			   int statusCode = sbcbr.subscribe(hub, hub_topic, hostname, null, null);
 			   
 			   if (statusCode == 204){

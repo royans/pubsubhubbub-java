@@ -29,7 +29,7 @@ public class Subscriber {
 
 	DefaultHttpClient httpClient = null;
 	Web webserver = null;
-	String contextPath = "/push";
+	String contextPath = "/push/";
 
 	public Subscriber(Web webserver) {
 		
