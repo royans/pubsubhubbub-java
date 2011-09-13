@@ -76,7 +76,7 @@ public class Publisher {
 	 * 
 	 * @param The topic_url you want to publish
 	 * 
-	 * @return HTTP Response code. 200 is ok. Anything else smells like trouble
+	 * @return HTTP Response code. 200, 202, 204 is ok. Anything else smells like trouble
 	 */
 	public int execute(String hub, String topic_url) throws Exception {
 
